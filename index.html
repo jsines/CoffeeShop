@@ -1,0 +1,38 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>bean world</title>
+		<script src="main.js" charset="utf-8" type="text/javascript"></script>
+		<script src="shop.js" charset="utf-8" type="text/javascript"></script>
+		<script src="format.js" charset="utf-8" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="saveData" style="text-align:center; width:350px">
+			<h1>welcome to bean world</h1>
+			<p id="saveBeans">Checking for save...</p>
+			<p id="saveMoney"></p>
+			<p id="saveBags"></p>
+			<p id="saveLvl"></p>
+			<p id="saveAutoPickers"></p>
+			<p id="saveFieldWorkers"></p>
+		</div>
+		<div style="text-align:center; width:350px">
+			<button onclick="farmBeans()">Farm Beans</button>
+			<button onclick="bagBeans()">Bag Beans (200)</button>
+			<button onclick="sellBag()">Sell Bag ($5)</button>
+		</div>
+		<br>
+		<div style="border-style: dotted;width:350px">
+			<h1 style="text-align:center">SHOP</h1>
+			<div style="text-align:center">
+				<b>trade beans</b><br>
+				<button onclick="buyAutoPicker()" id="AutoPicker">AutoPicker</button>
+				<button onclick="buyFieldWorker()" id="FieldWorker">Field Worker</button>
+			</div>
+			<div style="text-align:center">
+				<b>trade worthless human currency</b><br>
+				<button onclick="buyXP()" id="XPBoost">EXP</button>
+			</div>
+		</div>
+	</body>
+</html>
